@@ -186,3 +186,70 @@ h1{
   padding: 16px 10px;
   border-bottom: 2px solid var(--colorbase-1);
 }
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media (max-width: 1024px) {
+  .menu {
+    width: 120px;
+  }
+  .logo, .menu img {
+    width: 120px;
+  }
+  .contenido {
+    margin-left: 140px;
+    margin-right: 40px;
+  }
+  .container {
+    margin-left: 130px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .logo, .menu img {
+    width: 60px;
+    padding: 5px;
+  }
+  .menu h2, .menu a {
+    font-size: 16px;
+    padding: 4px 6px;
+  }
+  .contenido {
+    margin: 10px;
+    margin-top: 80px;
+    padding: 5px;
+  }
+  .inicio .titulo {
+    position: static;
+    margin: 10px 0;
+    left: 0;
+    top: 0;
+    display: block;
+    text-align: center;
+  }
+  .container {
+    margin: 10px 0;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .fotos {
+    width: 100%;
+    max-width: 300px;
+  }
+  .perrito {
+    display: none;
+  }
+  .patitas, .patitas2 {
+    display: none;
+  }
+}
